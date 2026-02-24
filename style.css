@@ -169,6 +169,22 @@ a {
   border: 1px solid var(--line);
 }
 
+.photo {
+  padding: 6px 6px 12px;
+}
+
+.photo__img {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid rgba(17, 24, 39, 0.14);
+}
+
 .main {
   padding: 20px;
   border: 1px solid var(--line);
