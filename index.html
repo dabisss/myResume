@@ -1,50 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Resume - John Davis Arciga</title>
-  <style>
-    /* Make the PDF occupy the full screen */
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-      width: 100%;
-      overflow: hidden;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>John Davis A. Arciga — Resume</title>
+    <meta
+      name="description"
+      content="Resume website for John Davis A. Arciga — Information Technology student seeking an Internship / OJT position."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
 
-    iframe, object {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
+    <header class="topbar" role="banner">
+      <div class="topbar__inner">
+        <div class="identity">
+          <h1 class="identity__name">John Davis A. Arciga</h1>
+          <p class="identity__tag">
+            Information Technology student • Internship / OJT applicant
+          </p>
+        </div>
 
-    /* Optional: fallback message styling */
-    .fallback {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
+      </div>
+    </header>
 
-    .fallback a {
-      color: #007bff;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
+    <main id="content" class="page" role="main">
+      <section class="sheet" aria-label="Resume">
+        <section class="resume-header" aria-label="Resume header">
+          <div class="resume-header__left">
+            <h2 class="resume-header__name">John Davis A. Arciga</h2>
+            <p class="resume-header__tag">
+              Information Technology student seeking an Internship / OJT position
+            </p>
+          </div>
+          <div class="resume-header__right" aria-label="Contact details">
+            <p class="resume-header__contact">
+              <span class="resume-header__label">Phone</span>
+              <a href="tel:+639271520540">+63 927 152 0540</a>
+            </p>
+            <p class="resume-header__contact">
+              <span class="resume-header__label">Email</span>
+              <a href="mailto:jdavisarciga@gmail.com">jdavisarciga@gmail.com</a>
+            </p>
+            <p class="resume-header__contact">
+              <span class="resume-header__label">Address</span>
+              <span>Abangan Norte, Marilao, Bulacan</span>
+            </p>
+          </div>
+        </section>
 
-  <!-- Main PDF viewer using object (works better than iframe on GitHub Pages) -->
-  <object data="myResume.pdf" type="application/pdf">
-    <div class="fallback">
-      <p>Your browser does not support PDFs.<br>
-         <a href="myResume.pdf" target="_blank">Click here to download the PDF</a>.
-      </p>
-    </div>
-  </object>
+        <aside class="sidebar" aria-label="Personal information and skills">
+          <section class="card">
+            <h2 class="card__title">Personal Information</h2>
+            <dl class="kv">
+              <div class="kv__row">
+                <dt class="kv__key">Phone</dt>
+                <dd class="kv__val">
+                  <a href="tel:+639271520540">+63 927 152 0540</a>
+                </dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__key">Email</dt>
+                <dd class="kv__val">
+                  <a href="mailto:jdavisarciga@gmail.com">jdavisarciga@gmail.com</a>
+                </dd>
+              </div>
+              <div class="kv__row">
+                <dt class="kv__key">Address</dt>
+                <dd class="kv__val">Abangan Norte, Marilao, Bulacan</dd>
+              </div>
+            </dl>
+          </section>
 
-</body>
+          <section class="card">
+            <h2 class="card__title">Skills</h2>
+            <ul class="list">
+              <li>Windows OS installation, configuration, and basic troubleshooting</li>
+              <li>Basic networking (LAN, IP addressing, connectivity issues)</li>
+              <li>Network configuration and troubleshooting</li>
+              <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+              <li>Basic familiarity with system administration concepts (Windows &amp; Linux)</li>
+              <li>Project management</li>
+              <li>Time management and adaptability</li>
+            </ul>
+          </section>
+        </aside>
+
+        <div class="main">
+          <section class="section">
+            <h2 class="section__title">Objectives</h2>
+            <p class="prose">
+              Information Technology student seeking an Internship / OJT position where I can
+              apply my technical skills, research-oriented mindset, and problem-solving
+              abilities to support technology-driven customer experience solutions. Committed
+              to learning from experienced mentors and gaining practical exposure to IT
+              support, system troubleshooting, web development, UI/UX design fundamentals,
+              and basic network operations.
+            </p>
+          </section>
+
+          <section class="section">
+            <h2 class="section__title">Education</h2>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">STI College - Malolos</h3>
+                <p class="entry__meta">2022 - Present</p>
+              </div>
+              <p class="entry__subtitle">Bachelor of Science in Information Technology</p>
+            </article>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">St. Martin de Porres Catholic School of Guiguinto</h3>
+                <p class="entry__meta">2019 - 2022</p>
+              </div>
+              <p class="entry__subtitle">
+                Science, Technology, Engineering, and Mathematics (STEM)
+              </p>
+            </article>
+          </section>
+
+          <section class="section">
+            <h2 class="section__title">Capstone Project</h2>
+
+            <article class="entry">
+              <div class="entry__head">
+                <h3 class="entry__title">
+                  MotoMod: Custom Motorcycle Builder with Real-Time Parts Shopping
+                </h3>
+                <p class="entry__meta">December 2025</p>
+              </div>
+              <ul class="list list--bullets">
+                <li>
+                  Programmed the core motorcycle customization feature using Unity and Visual
+                  Studio, allowing users to change and preview motorcycle parts in real time
+                </li>
+                <li>
+                  Implemented part selection and swapping logic to ensure smooth and accurate
+                  customization
+                </li>
+                <li>
+                  Conducted testing and basic troubleshooting to maintain stable system
+                  functionality
+                </li>
+                <li>
+                  Documented system features, basic technical processes, and user flow for
+                  reference
+                </li>
+              </ul>
+            </article>
+          </section>
+
+          <section class="section">
+            <h2 class="section__title">Seminars &amp; Certificates</h2>
+            <div class="timeline" role="list">
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">April 2023</p>
+                <p class="timeline__text">The First IT Congress: A Quantum Leap Towards Excellence</p>
+              </div>
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">June 2023</p>
+                <p class="timeline__text">Filipino Web Development Peers Seminar</p>
+              </div>
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">April 2024</p>
+                <p class="timeline__text">SYXNTAX Endgame: Gaming Towards Excellence</p>
+              </div>
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">December 2024</p>
+                <p class="timeline__text">
+                  SAP University Alliances: HCM, WM, PS, EAM, CS, QM modules of SAP S/4HANA using
+                  Global Bike
+                </p>
+              </div>
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">March 2025</p>
+                <p class="timeline__text">Configure Power BI Desktop Like a Pro (Basic)</p>
+              </div>
+              <div class="timeline__item" role="listitem">
+                <p class="timeline__date">June 2025</p>
+                <p class="timeline__text">Alison: Diploma in Cyber Security</p>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+      <p class="footer__text">© <span data-year></span> John Davis A. Arciga</p>
+    </footer>
+  </body>
 </html>
