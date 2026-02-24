@@ -1,23 +1,50 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Resume - John Davis Arciga</title>
   <style>
+    /* Make the PDF occupy the full screen */
     html, body {
       margin: 0;
       padding: 0;
       height: 100%;
+      width: 100%;
       overflow: hidden;
     }
 
-    iframe {
+    iframe, object {
       width: 100%;
       height: 100%;
       border: none;
     }
+
+    /* Optional: fallback message styling */
+    .fallback {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    .fallback a {
+      color: #007bff;
+      text-decoration: none;
+    }
   </style>
 </head>
 <body>
-  <iframe src="myResume.pdf"></iframe>
+
+  <!-- Main PDF viewer using object (works better than iframe on GitHub Pages) -->
+  <object data="myResume.pdf" type="application/pdf">
+    <div class="fallback">
+      <p>Your browser does not support PDFs.<br>
+         <a href="myResume.pdf" target="_blank">Click here to download the PDF</a>.
+      </p>
+    </div>
+  </object>
+
 </body>
 </html>
