@@ -130,6 +130,10 @@ a {
   align-items: start;
 }
 
+.resume-header--single {
+  grid-template-columns: 1fr;
+}
+
 .resume-header__name {
   margin: 0;
   font-size: 22px;
